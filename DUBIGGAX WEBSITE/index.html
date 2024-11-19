@@ -91,10 +91,9 @@
                     <div class="custom-block d-lg-flex flex-column justify-content-center align-items-center">
                         <img src="images/vintage-chair-barbershop.jpg" class="custom-block-image img-fluid" alt="">
 
-                        <h4><strong class="text-white">Vamos lá!.</strong></h4>
+                        <h4><strong class="text-white">Vamos lá !</strong></h4>
 
-                        <a href="#booking-section" class="smoothscroll btn custom-btn custom-btn-italic mt-3">Marque a
-                            hora</a>
+                        <a href="#booking-section" class="smoothscroll btn custom-btn custom-btn-italic mt-3">Agende seu horário</a>
                     </div>
                 </section>
 
@@ -128,9 +127,9 @@
                                     </li>
 
                                     <li class="social-icon-item">
-                                        <a href="#" class="social-icon-link bi-whatsapp">
+                                        <a href="https://wa.me/5561982519509" target="_blank"
+                                            class="social-icon-link bi-whatsapp">
                                         </a>
-                                    </li>
                                     </ul>
                                 </div>
                             </div>
@@ -246,7 +245,7 @@
                             <div class="col-lg-10 col-12 mx-auto">
                                 <form action="#" method="post" class="custom-form booking-form" id="bb-booking-form" role="form">
                                     <div class="text-center mb-5">
-                                        <h2 class="mb-1">Marque a hora</h2>
+                                        <h2 class="mb-1">Agende seu horário</h2>
                                         <p>Por favor preencha o formulário e nós te atenderemos em breve!</p>
                                     </div>
                                     <div class="booking-form-body">
@@ -360,13 +359,13 @@
                         const msgWhatsApp = `Olá, gostaria de agendar um horário.\n\n` +
                                             `Nome: ${nome}\n` +
                                             `Telefone: ${telefone}\n` +
-                                            `Data: ${data}\n` +
+                                            `Data de Nascimento: ${data}\n` +
                                             `Hora: ${hora}\n` +
                                             `Unidade: ${unidade}\n` +
                                             `Barbeiro: ${barbeiro}\n` +
                                             `Comentários: ${mensagem || 'Nenhum'}`;
                 
-                        const telefoneDestino = '5561982519509 ';
+                        const telefoneDestino = '5561983442532 ';
                         const urlWhatsApp = `https://api.whatsapp.com/send?phone=${telefoneDestino}&text=${encodeURIComponent(msgWhatsApp)}`;
                         window.open(urlWhatsApp, '_blank');
                     });
